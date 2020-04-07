@@ -1,4 +1,41 @@
 /* CSS Document */
+@font-face {
+	font-family: Roboto-Bold;
+	src: url(Roboto-Bold.ttf);
+}
+
+.alphabet {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	font-family: Roboto-Bold;
+	letter-spacing: 0pt;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.keypad-container {
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+}
+
+.keypad-center-letter {
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	font-family: Roboto-Bold;
+	color: #FFFFFF;
+}
+
+.keypad-image {
+	width: 100%;
+	height: auto;
+}
 
 body {
 	font-family: Arial;
@@ -312,4 +349,42 @@ a:active {
 
 #panel {
 	display: none;
+}
+
+.themes-display-container {
+	position: relative;
+}
+.themes-display-middle {
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	width: 100%;
+	text-align: center;
+}
+.themes-display-bottomleft {
+	position: absolute;
+	left: 0;
+	bottom: -50;
+	text-align: center;
+}
+.themes-container {
+	padding: 0.00em 0px;
+}
+.themes-container:after, .themes-row-padding:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.img-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.0;
+	filter: alpha(opacity=0);
+	transition: 0.5s ease;
+	background-color: #341d5b;
 }
